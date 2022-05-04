@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+
+function Holamundo(props) {
+  return(
+    <div id='marco'>
+      <h1> {props.subtitle} </h1>
+      {props.texto}
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      EStos son mis componentes
+      <Holamundo texto='marco1' subtitle='Caja1'/>
+      <Holamundo texto='marco2' subtitle='Caja2'/>
+      <Holamundo texto='marco2' subtitle='Caja2'/>
     </div>
   );
 }
